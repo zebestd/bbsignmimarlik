@@ -7,6 +7,7 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta charset="UTF-8">
 <style>
     body {
     overflow-x: hidden;
@@ -30,19 +31,22 @@
     font-size: .7rem;
 }
 .landing-page {
+    
     position: relative;
+    
     overflow: hidden;
-    height: 39.8rem;
+    height: 100%;
 }
 .landing-page:before {
     content: "";
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: absolute; 
     background: #1B2030 url(https://i2.wp.com/www.davidchristopherassoc.com/wp-content/uploads/2014/06/bluffview_dallas_homes.jpg?fit=1600%2C750&ssl=1) top center no-repeat;
     background-size: cover;
     animation: zoom-in 30s linear 10ms infinite;
     z-index: -1
+    overflow: hidden;
 }
 #logo {
     background: rgba(255, 255, 255, 0.5);
@@ -90,9 +94,7 @@ span {
 /********************************* START NAV-LEFT ********************************/
 
 .nav {
-    /*
-    height: 39.8rem;
-    */
+   /* height: 39.8rem; */
     background: rgb(51, 51, 51);
     opacity: .9;
     position: absolute;
@@ -278,7 +280,8 @@ hr {
 
 #work {
     position: relative;
-    padding: 20px;
+   /* padding: 20px; */
+    padding-top: 40px;
     text-align: center;
 }
 #work h1 {
@@ -300,10 +303,10 @@ hr {
 figure.info-hover {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
-    
 }
 figure.info-hover figcaption {
-    top: 50%;
+    top: 20px;
+    text-align: left;
     left: 1.25rem;
     right: 1.25rem;
     position: absolute;
@@ -343,7 +346,8 @@ figure.info-hover a {
 */
 
 img:hover{
-    opacity: 0.3;
+   /* opacity: 0.3; */
+    filter: brightness(50%);
 }
 
 figure.info-hover:hover:after,
@@ -367,7 +371,7 @@ figcaption h2 {
 #contact {
     text-align: center;
     position: relative;
-    padding: 20px;
+    padding-top: 20px;
     width: 100%;
 }
 #contact header {
@@ -477,7 +481,9 @@ h5 {
     }
 }
 
+
 </style>
+
 
 
 <body>
@@ -493,32 +499,31 @@ h5 {
     <div class="nav" id="nav">
        <a href="#" class="icon" onclick="responsiveNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
        <a href="#" class="iconx" onclick="responsiveNav()"><i class="fa fa-times" aria-hidden="true"></i></a> 
-       <a href="index.html">Anasayfa</a>
+       <a href="#">Anasayfa</a>
        <!--
        <a href="#about">Hakkında</a>
        -->
-       <a href="#work">Çalışmalarımız</a>
+       <a href="#work">Projeler</a>
        <a href="#contact">İletişim</a>	
     </div>
     <!--  ***************** END SIDE NAVIGATION ***************** -->
     <!--  ***************** START LANDING PAGE  ***************** -->
-    <!-- <div class="landing-page"> -->
+   <!-- <div class="landing-page"> -->
        <div id="logo">
           <img src="http://www.eatlogos.com/building_logos/png/vector_construction_house_logo.png" height="50px">
           <a href="index.html"><h1>BBSIGN </h1>
           <span style="decoration:none; color:black;">Mimarlık</span></a>
        </div>
-       <!--
-       <div id="slogan">
-          <h1>Hayalinizi beraber tasarliyoruz.</h1>
+      <!-- <div id="slogan">
+          <h1>Hayalinizi beraber tasarlıyoruz.</h1>
        </div>
-    -->
-    <!-- </div> -->
+    </div> -->
     <!--  ***************** END LANDING PAGE  ***************** -->
     <!--  ***************** START ABOUT SECTION  ***************** -->
+    <!--
     <div id="about">
        
-       <!--
+       
        <header>
           <h1>Hakkimizda</h1>
        </header>
@@ -539,7 +544,7 @@ h5 {
        </section>
     -->
        
-       <hr/>
+       
        
        <!--
        <section class="services">
@@ -558,13 +563,14 @@ h5 {
           </ul>
           <a href="http://www.google.ro" target="_blank"><button>See the complete list of services</button></a>
        </section>
-    -->
+    
     </div>
+    -->
     <!--  ***************** END ABOUT SECTION  ***************** -->
     <!--  ***************** START WORK  ***************** -->
-     <div id="work">
-         <h2>Projeler</h2>
-       <br/>
+    <div id="work">
+     
+       
        <!--
        <header>
           <h1>Calismalarimiz</h1>
@@ -577,7 +583,7 @@ h5 {
           <figure class="info-hover">
             <img src="xyzkonaklar3.jpg" style="width:100%; height:auto; border-radius:15px;">
              <figcaption>
-                 <a href="xyzkonaklar3.jpg" style="color: #0a0b3f;">
+                 <a href="xyzkonaklar3.jpg" style="color: white;">
                 <h4>XYZ Konakları</h4>
                 </a>
                 <!--
@@ -594,7 +600,7 @@ h5 {
           <figure class="info-hover">
             <img src="xyzhastane2.jpg" style="width:100%; height:auto; border-radius:15px;">
              <figcaption>
-                 <a href="xyzhastane2.jpg" style="color: #0a0b3f;">
+                 <a href="xyzhastane2.jpg" style="color: white;">
                 <h4>XYZ Hastanesi</h4>
                 </a>
                 <!--
@@ -610,7 +616,7 @@ h5 {
             <img src="https://images.adsttc.com/media/images/601b/d8ca/f91c/8191/5a00/056b/medium_jpg/%E4%BB%8E%E5%B0%8F%E5%B1%B1%E5%9D%A1%E4%B8%8A%E7%9C%8B%E5%BB%BA%E7%AD%911_%E5%A4%8F%E8%87%B3.jpg?1612437692
             " style="width:100%; height:auto; border-radius:15px;">
              <figcaption>
-                <a href="xyzkonaklar3.jpg" style="color: #0a0b3f;">
+                <a href="xyzkonaklar3.jpg" style="color: white;">
                 <h4>XYZ Belediye Binası</h4>
                 </a>
                 <!--
@@ -623,10 +629,10 @@ h5 {
        </div>
        <div class="example">
           <figure class="info-hover">
-            <img src="https://lh3.googleusercontent.com/proxy/EaTdVI19W52Vlk_DgLc-OCBgJTJIWlplws7HftK9wx1Zs8wt_GCrKG_GNd2ZOKktReR2QBec-KyuKIYodaChsE0gF6hbabiVXT8th5qzRqmJ2Q" style="width:100%; height:auto; border-radius:15px;">
+            <img src="panora550.jpg" style="width:100%; height:auto; border-radius:15px;">
              <figcaption>
-                 <a href="xyzkonaklar3.jpg" style="color: #0a0b3f;">
-                <h4>XYZ Alişveriş ve Yaşam Merkezi</h4>
+                 <a href="panora550.jpg" style="color: white;">
+                <h4>XYZ Alışveriş ve Yaşam Merkezi</h4>
                 </a>
                 
                 <!--
@@ -634,10 +640,10 @@ h5 {
                 <h2>More about this project.</h2>
                 -->
              </figcaption>
-             <a href="#xyz"></a>
+            <!-- <a href="#xyz"></a> -->
           </figure>
        </div>
-       <a href="projeler.html"><button>Projelerimizin tamamını görün</button></a>
+     <!--  <a href="projeler.html"><button>Projelerimizin tamamını görün</button></a> -->
     </div>
     <!--  ***************** END WORK   ***************** -->
     <div id="contact">
@@ -646,14 +652,14 @@ h5 {
           <h1>İletişim</h1>
        </header>
        <div id="info">
-          <p>112. Sk, No:6</p>
+          <p>Tepecik Mahallesi, 112. Sk, No:6</p>
           <p>Seferihisar, İzmir</p>
           <p>Tel: 0506 545 92 11</p>
           <p>E-posta: bbsign@bbsignmimarlik.com</p>
           <!--<h4>Careers</h4>
           <h5> If you are interested in a career at our company, please forward your CV and cover letter to careers@nextsolutions.com</h5> -->
           <div id="social">
-             <p>Bizi takip edin!</p>
+             <!-- <p>Bizi takip edin!</p> -->
              <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
              <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
              <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
